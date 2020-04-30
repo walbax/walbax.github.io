@@ -2,30 +2,30 @@
     border-radius: 50% !important;
     filter: drop-shadow(8px 8px 10px gray);
     margin-bottom: 20px;
-    max-height: 500px;
-}    
-
-@media (max-width: 600px) {
+    max-height: 300px;
+}
+   
+@media (max-width: 1300px) {
     .walbax-main-logo {
-        max-height: 400px;
+        max-height: 230px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .walbax-main-logo {
-        max-height: 300px;
+        max-height: 200px;
     }
 }
 
 @media (max-width: 450px) {
     .walbax-main-logo {
-        max-height: 250px;
+        max-height: 175px;
     }
 }
 
 @media (max-width: 300px) {
     .walbax-main-logo {
-        max-height: 200px;
+        max-height: 150px;
     }
 }
 
