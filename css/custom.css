@@ -3,9 +3,8 @@
     filter: drop-shadow(8px 8px 10px gray);
     margin-bottom: 20px;
     max-height: 500px;
-
-
 }    
+
 @media (max-width: 600px) {
     .walbax-main-logo {
         max-height: 400px;
@@ -34,4 +33,17 @@
     .walbax-main-logo {
         max-height: 125px;
     }
+}
+
+.language-selector {
+  font-size: 90%;
+}
+
+.language-selector a {
+    display: inline !important;
+    padding: 0 1rem !important;
+}
+
+.current-language {
+    text-decoration: underline !important;
 }
