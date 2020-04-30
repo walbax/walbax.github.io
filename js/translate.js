@@ -173,7 +173,7 @@ $(function () {
         });
     }
 
-    if (localStorage.getItem('name')) {
+    if (localStorage.getItem('current_lang')) {
         current_lang = localStorage.getItem('current_lang');
         if (current_lang == 'pt-BR'){
             $("#id-select-language-pt").addClass("current-language");
