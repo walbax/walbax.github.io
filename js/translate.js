@@ -166,9 +166,32 @@ $(function () {
     });
 
     function translate() {
+        localStorage.setItem('current_lang', current_lang);
         $("[data-translate]").each(function () {
             var key = $(this).data('translate');
             $(this).html(dictionary[key][current_lang] || "N/A");
         });
+    }
+
+    if (localStorage.getItem('name')) {
+        current_lang = localStorage.getItem('current_lang');
+        if (current_lang == 'pt-BR'){
+            $("#id-select-language-pt").addClass("current-language");
+            $("#id-select-language-en").removeClass("current-language");
+            $("#id-select-language-fr").removeClass("current-language");
+        } else if (current_lang == 'en') {
+            $("#id-select-language-pt").removeClass("current-language");
+            $("#id-select-language-en").addClass("current-language");
+            $("#id-select-language-fr").removeClass("current-language");
+        } else if (current_lang == 'fr') {
+            $("#id-select-language-pt").removeClass("current-language");
+            $("#id-select-language-en").removeClass("current-language");
+            $("#id-select-language-fr").addClass("current-language");
+        } else {
+            $("#id-select-language-pt").removeClass("current-language");
+            $("#id-select-language-en").removeClass("current-language");
+            $("#id-select-language-fr").removeClass("current-language");
+        }
+        translate();
     }
 });
