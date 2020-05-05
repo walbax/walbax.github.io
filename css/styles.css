@@ -10113,10 +10113,75 @@ header.masthead h1 {
   opacity: 1;
 }
 
+@media (max-width:600px)  {
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
+    -webkit-animation: flickerAnimation 8s infinite;
+    -moz-animation: flickerAnimation 8s infinite;
+    -o-animation: flickerAnimation 8s infinite;
+    animation: flickerAnimation 8s infinite;
+  }
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
 
 .text-white-80 {
   color: rgba(255, 255, 255, 0.80);
+}
+
+@-webkit-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+        
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes flickerAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+        
+    100% {
+        opacity: 0;
+    }
 }
